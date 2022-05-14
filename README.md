@@ -17,6 +17,10 @@ $ source  flaskapi/bin/activate
 
 $ pip install -r requirements.txt
 
+### **RUN**
+
+$ python api.py
+
 ### **Documentation**
 
 * POST /api/users/
