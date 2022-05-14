@@ -6,12 +6,15 @@
 For Mac / Linux users, perform below to setup the environment
 
 $ sudo apt update
+
 $ sudo apt install python3-pip
 
 Setup the virtual environment
 
 $ virtualenv flaskapi
+
 $ source  flaskapi/bin/activate
+
 $ pip install -r requirements.txt
 
 ### **Documentation**
