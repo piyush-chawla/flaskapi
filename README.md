@@ -21,6 +21,47 @@ $ pip install -r requirements.txt
 
 $ python api.py
 
+```
+$ python api.py
+/home/ubuntu/Documents/REST-auth/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py:834: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+/home/ubuntu/Documents/REST-auth/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py:834: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+ * Debugger is active!
+ * Debugger PIN: 608-482-789
+127.0.0.1 - - [13/May/2022 23:36:27] "POST /api/users HTTP/1.1" 201 -
+127.0.0.1 - - [13/May/2022 23:36:42] "GET /api/resource HTTP/1.1" 200 -
+127.0.0.1 - - [13/May/2022 23:37:21] "GET /api/users HTTP/1.1" 405 -
+127.0.0.1 - - [13/May/2022 23:42:29] "GET /api/ HTTP/1.1" 404 -
+127.0.0.1 - - [13/May/2022 23:42:34] "GET /api/resources HTTP/1.1" 404 -
+127.0.0.1 - - [13/May/2022 23:42:56] "GET /api/resource HTTP/1.1" 200 -
+127.0.0.1 - - [13/May/2022 23:53:03] "POST /api/users HTTP/1.1" 201 -
+127.0.0.1 - - [13/May/2022 23:53:32] "GET /api/resource HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2022 00:35:55] "GET /api/resource HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2022 00:36:18] "GET /api/users/C1 HTTP/1.1" 404 -
+127.0.0.1 - - [14/May/2022 00:36:52] "GET /api/users/1 HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2022 00:36:59] "GET /api/users/2 HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2022 00:41:21] "POST /api/users HTTP/1.1" 400 -
+127.0.0.1 - - [14/May/2022 00:41:30] "GET /api/users HTTP/1.1" 405 -
+127.0.0.1 - - [14/May/2022 00:41:30] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [14/May/2022 00:42:03] "POST /api/users HTTP/1.1" 201 -
+127.0.0.1 - - [14/May/2022 00:43:27] "GET /api/resource HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2022 00:44:06] "GET /api/resource HTTP/1.1" 401 -
+127.0.0.1 - - [14/May/2022 00:45:01] "GET /api/token HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2022 00:45:32] "GET /api/resource HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2022 00:45:40] "GET /api/resource HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2022 00:58:53] "GET /api/token HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2022 00:59:03] "GET /api/token HTTP/1.1" 200 -
+127.0.0.1 - - [14/May/2022 00:59:32] "GET /api/resource HTTP/1.1" 200 -
+```
+
 ### **Documentation**
 
 * POST /api/users/
