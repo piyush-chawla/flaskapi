@@ -143,32 +143,35 @@ HTTP/1.0 200 OK
 Content-Type: application/json
 Content-Length: 163
 Server: Werkzeug/1.0.1 Python/3.10.4
-Date: Sat, 14 May 2022 04:45:01 GMT
+Date: Sat, 14 May 2022 05:20:03 GMT
 
 {
   "duration": 600, 
-  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZXhwIjoxNjUyNTA0MTAxLjQ1NTgwMjd9.Q-l8d7YPDtC2X7l7UbURNdR3ffI58v9ZuZdiR41s6Yo"
+  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZXhwIjoxNjUyNTA2MjAzLjQ2NTQ5NzN9.lV9jD2jqTUDaXK32buknvqqvNa_o_1FvThBx4wrs7a4"
 }
 $ 
-$ curl -u eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZXhwIjoxNjUyNTA0MTAxLjQ1NTgwMjd9.Q-l8d7YPDtC2X7l7UbURNdR3ffI58v9ZuZdiR41s6Yo:x -i -X GET http://127.0.0.1:5000/api/resource
+$ curl -u eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZXhwIjoxNjUyNTA2MjAzLjQ2NTQ5NzN9.lV9jD2jqTUDaXK32buknvqqvNa_o_1FvThBx4wrs7a4:x -i -X GET http://127.0.0.1:5000/api/resource
 HTTP/1.0 200 OK
 Content-Type: application/json
 Content-Length: 27
 Server: Werkzeug/1.0.1 Python/3.10.4
-Date: Sat, 14 May 2022 04:45:32 GMT
-
-{
-  "data": "Hello, C2!"
-}
-$ curl -u eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZXhwIjoxNjUyNTA0MTAxLjQ1NTgwMjd9.Q-l8d7YPDtC2X7l7UbURNdR3ffI58v9ZuZdiR41s6Yo:123 -i -X GET http://127.0.0.1:5000/api/resource
-HTTP/1.0 200 OK
-Content-Type: application/json
-Content-Length: 27
-Server: Werkzeug/1.0.1 Python/3.10.4
-Date: Sat, 14 May 2022 04:45:40 GMT
+Date: Sat, 14 May 2022 05:20:29 GMT
 
 {
   "data": "Hello, C2!"
 }
 $
+
+$ curl -u eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZXhwIjoxNjUyNTA2MjAzLjQ2NTQ5NzN9.lV9jD2jqTUDaXK32buknvqqvNa_o_1FvThBx4wrs7a4:x -i -X GET http://127.0.0.1:5000/api/users/1
+HTTP/1.0 200 OK
+Content-Type: application/json
+Content-Length: 23
+Server: Werkzeug/1.0.1 Python/3.10.4
+Date: Sat, 14 May 2022 05:20:44 GMT
+
+{
+  "username": "C2"
+}
+$ 
+
 ```
